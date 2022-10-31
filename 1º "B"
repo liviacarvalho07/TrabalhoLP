@@ -1,4 +1,4 @@
-print("\n  Menu de Cadastramento (Trabalho LP)\n")
+print("\n  Menu de Cadastramento (Trabalho LP)")
 print(" Dupla de realização:")
 print(" Ana Livia Carvalho N° 03")
 print(" Josué Soares Torres N° 29")
@@ -38,8 +38,10 @@ while i!=5:
         	print("\n Cadastro concluído. \n")
         	b=1
         if i==2:
-                print ("\n Inicie novamente. \n")
-                b=0
+            print ("\n Inicie novamente. \n")
+            b=0
+        if i >2:
+        	print ("Credencial Inválida.")
   
             
    if esc==2:       
@@ -115,7 +117,7 @@ while i!=5:
          	cpf=("Excluído")
          	tel=("Excluído")
          	
-
+   
    	
    if esc == 4:
          	
@@ -153,8 +155,8 @@ while i!=5:
          	if esk == 4:
          	   	cpf= input ("CPF:")
          	   	print (nome, "\n", idd, "\n", email, "\n", cpf, "\n", tel)
-         	else:
-             	   print("\n  Credenciais inválidas. Repita o processo com atenção. \n") 
+         	if esk > 6:
+             	   print("\n  Credenciais inválidas. Repita o processo com atenção. \n")
          	if esk == 5:
          		   tel= input ("Telefone: ")
          		   print (nome, "\n", idd, "\n", email, "\n", cpf, "\n", tel)
@@ -165,7 +167,8 @@ while i!=5:
              	   email=input("Email:")
              	   cpf= input ("CPF:")             	   
              	   tel= input ("Telefone: ")
-             	   
+             
+       	  
    if esc==5:
    	print ("  Menu de saída do cadastramento... \n")
    	print ("  Caso tenha realizado cadastro ou não, selecione: \n ")
@@ -179,4 +182,5 @@ while i!=5:
    	
    	if saida ==2:
    		print("voltando...")
-
+   if esc > 6:
+   	print ("  Credencial Inválida.")
