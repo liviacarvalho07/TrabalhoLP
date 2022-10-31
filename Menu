@@ -1,0 +1,182 @@
+print("\n  Menu de Cadastramento (Trabalho LP)\n")
+print(" Dupla de realização:")
+print(" Ana Livia Carvalho N° 03")
+print(" Josué Soares Torres N° 29")
+print("\n")
+i=0
+while i!=5:
+   
+   
+   print("-"*25)
+  
+   print ("\n TELA INICIAL DE LOGIN \n")
+   print ("1 - Cadastrar") 
+   print ("2 - Ler") 
+   print ("3 - Deletar")
+   print ("4 - Atualizar") 
+   print ("5 - Sair")
+   esc=int (input ("\n Selecione uma opção: "))
+   print( "-"*25)
+   
+   
+   if esc==1:     
+       b=0
+       while b==0:    
+         	
+        print ("\n Preencha os campos abaixo:")         
+     
+        nome=input (" Nome completo:")
+        idd=input (" Idade:")
+        email=input (" Email:")
+        cpf=input (" CPF:")
+        tel=input (" Telefone:")
+        print (" \n Confira seus dados e digite se deseja confirmar ou anular o cadastro: \n")
+        print ("  1 - Sim, confirmar")
+        print ("  2 - Anular cadastro")
+        i = int (input ("\n Digite	 sua escolha:"))
+        if i==1:
+        	print("\n Cadastro concluído. \n")
+        	b=1
+        if i==2:
+                print ("\n Inicie novamente. \n")
+                b=0
+  
+            
+   if esc==2:       
+        print(("  Nome: %s") %nome)
+        print(("  Idade: %s") %idd)
+        print(("  Email: %s") %email)
+        print(("  CPF: %s") %cpf)
+        print(("  Telefone: %s") %tel)             
+        print (" \n Confira seus dados e confirme a leitura:")
+        print ("  1 - Sim")
+        print ("  2 - Não")
+        i = int (input ("\n Digite sua escolha:"))
+        if i==1:
+            print(" Leitura concluída.")
+        elif i>1:
+        	print (" Resposta inválida.")
+        if i<1:
+        	print (" Resposta inválida.")
+       	
+   if esc==3:
+         print ("   \n   Menu Delete")
+         print ("   \n   Dados  Cadastrados: \n")
+         print(("  1- Nome: %s") %nome)
+         print(("  2- Idade: %s") %idd)
+         print(("  3- Email: %s") %email)
+         print(("  4- CPF: %s") %cpf)
+         print(("  5- Telefone: %s") %tel)
+         
+         exc = int (input ("\n  Selecione qual campo quer excluir \n  (Se desejar excluir todos digite (6): "))
+         if exc ==1:
+         	nome=("Excluído")
+         	print (" Nome completo será excluído: \n")
+         	print((" Idade: %s") %idd)
+         	print((" Email: %s") %email)
+         	print((" CPF: %s") %cpf)
+         	print((" Telefone: %s \n") %tel)
+         
+         elif exc ==2:
+         	idd=("Excluído")
+         	print ("  Idade será excluída: \n")
+         	print((" Nome: %s") %nome)
+         	print((" Email: %s") %email)
+         	print((" CPF: %s") %cpf)
+         	print((" Telefone: %s \n") %tel)
+         elif exc ==3:   
+                   	 
+         	print ("  Email será excluído: \n")
+         	print((" Nome: %s") %nome)
+         	print((" Idade: %s") %idd)
+         	print((" CPF:%s") %cpf)
+         	print((" Telefone: %s \n") %tel)
+         	email=("Excluído")
+         elif exc ==4:
+         	cpf=("Excluído")         	 
+         	print ("  CPF será excluído: \n")
+         	print((" Nome: %s") %nome)
+         	print((" Idade: %s") %idd)
+         	print((" Email: %s") %email)
+         	print((" Telefone: %s \n") %tel)
+         elif exc ==5:
+         	tel=("Excluído")         	 
+         	print ("  Telefone será excluído: \n")
+         	print((" Nome: %s") %nome)
+         	print((" Idade: %s") %idd)
+         	print((" Email: %s ") %email)
+         	print((" CPF:%s \n") %cpf)
+         elif exc ==6:
+         	print ("  Todos os dados foram excluídos.")
+         	print ("...\n...\n...\n...\n...")
+         	nome=("Excluído")
+         	idd=("Excluído")
+         	email=("Excluído")
+         	cpf=("Excluído")
+         	tel=("Excluído")
+         	
+
+   	
+   if esc == 4:
+         	
+         	print (" Menu de atualização")
+         	print ((" 1- Nome: %s") %nome)
+         	print ((" 2- Idade: %s") %idd)
+         	print((" 3- Email: %s") %email) 
+         	print ((" 4- CPF: %s") %cpf)
+         	print ((" 5- Telefone: %s") %tel)      	               
+         	esk = int (input ("\n  Selecione qual campo quer atualizar \n  (Se desejar atualizar todos digite (6): "))
+         	
+         	if esk == 1:
+         		
+         		nome= input (" Nome completo:")
+         		print(nome)
+         		print(idd)
+         		print(email)
+         		print(cpf)
+         		print(tel)
+         	    
+         	if esk == 2:
+         	   
+         	   idd= input (" Idade: ")
+         	   print(" Dados Listados: ")
+         	   print(nome)
+         	   print(idd)
+         	   print(email)
+         	   print(cpf)
+         	   print(tel)
+         	
+         	if esk == 3:
+         	   	email=input("Email:")
+         	   	print (nome, "\n", idd, "\n", email, "\n", cpf, "\n", tel)
+         	
+         	if esk == 4:
+         	   	cpf= input ("CPF:")
+         	   	print (nome, "\n", idd, "\n", email, "\n", cpf, "\n", tel)
+         	else:
+             	   print("\n  Credenciais inválidas. Repita o processo com atenção. \n") 
+         	if esk == 5:
+         		   tel= input ("Telefone: ")
+         		   print (nome, "\n", idd, "\n", email, "\n", cpf, "\n", tel)
+            
+         	if esk == 6:	  
+             	   nome= input (" Nome completo:")
+             	   idd= input (" Idade: ")
+             	   email=input("Email:")
+             	   cpf= input ("CPF:")             	   
+             	   tel= input ("Telefone: ")
+             	   
+   if esc==5:
+   	print ("  Menu de saída do cadastramento... \n")
+   	print ("  Caso tenha realizado cadastro ou não, selecione: \n ")
+   	print (" 1- Sair do cadastro e encerrar sua atividade.")
+   	print (" 2- Voltar ao Menu Inicial. \n")
+   	saida= int (input (" Digite sua escolha: "))
+   	
+   	if saida ==1:
+   		i=5
+   		print("Você saiu do cadastramento.")
+   	
+   	if saida ==2:
+   		print("voltando...")
+
